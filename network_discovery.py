@@ -72,20 +72,6 @@ def xr_connect(host, port, username, password, device_type):
             )
 
 
-bgp_default_vrf = '''
-
-<bgp xmlns='http://cisco.com/ns/yang/Cisco-IOS-XR-ipv4-bgp-oper'>
-<instances>
-    <instance>
-        <instance-active>
-        <default-vrf>
-        </default-vrf>
-        </instance-active>
-    </instance>
-</instances>
-</bgp>
-'''
-
 def get_bgp_asn(conn):
     bgp_asn = '''
 
